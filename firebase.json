@@ -1,0 +1,21 @@
+{
+  "hosting": {
+    "rewrites": [ {
+      "source": "/api/**",
+      "function": "api"
+    }]
+  },
+  "functions": {
+    "source": "functions",
+    "ignore": [
+    "src/",
+    "test/",
+    "node_modules/"
+    ]
+  },
+  "emulators": {
+    "functions": {
+    "port": "5000"
+    }
+  }
+}
